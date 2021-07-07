@@ -63,6 +63,8 @@ function ready()
       
     });
 
+    setupInfo();
+
   
 }
 
@@ -359,4 +361,11 @@ function debug()
     console.log("clearDisplay flag: " + clearDisplay);
     debugCnt++
 
+}
+
+function setupInfo()
+{
+    $('#author').text('Ethan Kabir');
+    $('#year').text(new Date().getFullYear());
+    $('#website').attr('href', 'https://ethankabir.com');
 }

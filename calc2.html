@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="responsive.css">  
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script charset="UTF-8" type="text/javascript" src="calc.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <table class="calc_table">  
+
+            <tr>
+                <td><input readonly id="calc_display" class="calc_display" type="text" value="0"></td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            
+                            <td><button  data-key="ac" id="clear_btn" class="calc_op_btn2 common_btn">AC</button></td>
+                            <td><button  data-key="plusminus" class="calc_op_btn2 common_btn">&plusmn;</button></td>
+                            <td><button  data-key="%" class="calc_op_btn2 common_btn">%</button></td>
+                            <td><button  data-key="/" class="calc_op_btn common_btn">&divide;</button></td>
+                        
+                        </tr>
+                        <tr>
+                            
+                            <td><button  data-key="7" class="calc_btn common_btn">7</button></td>
+                            <td><button  data-key="8" class="calc_btn common_btn">8</button></td>
+                            <td><button  data-key="9" class="calc_btn common_btn">9</button></td>
+                            <td><button  data-key="x" class="calc_op_btn common_btn">x</button></td>
+                        
+                        </tr>
+                        <tr>
+                            
+                            <td><button  data-key="4" class="calc_btn common_btn">4</button></td>
+                            <td><button  data-key="5" class="calc_btn common_btn">5</button></td>
+                            <td><button  data-key="6" class="calc_btn common_btn">6</button></td>
+                            <td><button  data-key="-" class="calc_op_btn common_btn">-</button></td>
+                        
+                        </tr>
+                        <tr>
+                            
+                            <td><button  data-key="1" class="calc_btn common_btn">1</button></td>
+                            <td><button  data-key="2" class="calc_btn common_btn">2</button></td>
+                            <td><button  data-key="3" class="calc_btn common_btn">3</button></td>
+                            <td><button  data-key="+" class="calc_op_btn common_btn">+</button></td>
+                        
+                        </tr>
+                        <tr>
+                            
+                            <td colspan="2"><button  data-key="0" class="common_btn calc_btn calc_btn_zero">0</button></td>
+                            <td><button  data-key="." class="calc_btn common_btn">.</button></td>
+                            <td><button  data-key="=" class="calc_op_btn common_btn">=</button></td>
+                            
+                        
+                        </tr>
+                    </table>
+                </td>
+    
+            </tr>
+
+
+            <tr>
+                <td>
+                    <div class="info">
+                        Copyright &copy <span id="year"></span> by <a target=_blank id="website" href="#"><span id="author"></span></a></div></td>
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+
+</html>
